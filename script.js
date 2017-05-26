@@ -39,7 +39,4 @@ function getQuote() {
 $(document).ready(function() {
   getQuote();
   $('#newQuote').on('click', getQuote);
-  $('#tweetQuote').on('click', function() {
-    openURL('https://twitter.com/intent/tweet?text=' + encodeURIComponent('"' + quote + '" ' + author));
-  });
 });
